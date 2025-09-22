@@ -1,1 +1,24 @@
-let username1 = prompt("Adivinhe jogador1"); let username2 = prompt("Adivinhe jogador2"); let username3 = prompt("Adivinhe jogador3"); let username4 = prompt("Adivinhe jogador4"); let username5 = prompt("Adivinhe jogador5"); if (username1 === "Emmanuella Pinheiro" && username2 === "Evandro Santos" && username3 === "Emily Marques" && username4 === "Eliseu Pinto" && username5 === "Evelyn Rocha") { document.write("Parabéns continue sua jornada"); } else { documente.write("Tente de novo seu bastardo"); }
+let respostas = [
+    prompt("Adivinhe jogador1").trim(),
+    prompt("Adivinhe jogador2").trim(),
+    prompt("Adivinhe jogador3").trim(),
+    prompt("Adivinhe jogador4").trim(),
+    prompt("Adivinhe jogador5").trim()
+];
+
+let corretos = [
+    "Emmanuella Pinheiro",
+    "Evandro Santos",
+    "Emily Marques",
+    "Eliseu Pinto",
+    "Evelyn Rocha"
+];
+
+let acertou = respostas.length === corretos.length &&
+               respostas.every(nome => corretos.includes(nome));
+
+if (acertou) {
+    document.write("Parabéns continue sua jornada");
+} else {
+    document.write("Tente de novo seu bastardo");
+}
