@@ -13,12 +13,17 @@ let corretos = [
     "Eliseu Pinto",
     "Evelyn Rocha"
 ];
+let mensagem = document.getElementById("mensagem");
 
 let acertou = respostas.length === corretos.length &&
                respostas.every(nome => corretos.includes(nome));
 
 if (acertou) {
-    document.write("Parabéns continue sua jornada UwU *link*");
+    mensagem.innerHTML = 'Parabéns, você acertou todos os players! <br>Seu próximo desafio está aqui: <a href="https://example.com/next-challenge" target="_blank">Próximo desafio</a>';
+    mensagem.style.color = '#ffffffff';
+    mensagem.style.textAlign = 'center';
 } else {
-    document.write("Tente de novo seu bastardo");
+    mensagem.textContent = 'Tente de novo seu bastardo';
+    mensagem.style.color = '#ffffffff';
+    mensagem.style.textAlign = 'center';
 }
