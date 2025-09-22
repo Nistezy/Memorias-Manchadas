@@ -19,7 +19,7 @@ let acertou = respostas.length === corretos.length &&
                respostas.every(nome => corretos.includes(nome));
 
 if (acertou) {
-    mensagem.innerHTML = 'Parabéns, você acertou todos os players! <br>Seu próximo desafio está aqui: <a href="https://example.com/next-challenge" target="_blank">Próximo desafio</a>';
+    mensagem.innerHTML = 'Parabéns, você acertou todos os sacrifícios! <br>Seu próximo desafio está aqui: <a href="https://example.com/next-challenge" target="_blank">Próximo desafio</a>';
     mensagem.style.color = '#ffffffff';
     mensagem.style.textAlign = 'center';
 } else {
