@@ -18,7 +18,7 @@ let acertou = respostas.length === corretos.length &&
                respostas.every(nome => corretos.includes(nome));
 
 if (acertou) {
-    document.write("Parabéns continue sua jornada");
+    document.write("Parabéns continue sua jornada UwU *link*");
 } else {
     document.write("Tente de novo seu bastardo");
 }
