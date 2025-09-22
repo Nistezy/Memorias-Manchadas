@@ -1,23 +1,16 @@
-let players = [
-  prompt("Adivinhe jogador1"),
-  prompt("Adivinhe jogador2"),
-  prompt("Adivinhe jogador3"),
-  prompt("Adivinhe jogador4"),
-  prompt("Adivinhe jogador5")
-];
+let username1 = prompt("Adivinhe jogador1");
+let username2 = prompt("Adivinhe jogador2");
+let username3 = prompt("Adivinhe jogador3");
+let username4 = prompt("Adivinhe jogador4");
+let username5 = prompt("Adivinhe jogador5");
 
-let corretos = [
-  "Emmanuella Pinheiro",
-  "Evandro Santos",
-  "Emily Marques",
-  "Eliseu Pinto",
-  "Evelyn Rocha"
-];
-
-// Verifica se todos os nomes corretos estão dentro das respostas
-let acertou = corretos.every(nome => respostas.includes(nome));
-
-if (acertou) {
+if (
+  username1 === "Emmanuella Pinheiro" &&
+  username2 === "Evandro Santos" &&
+  username3 === "Emily Marques" &&
+  username4 === "Eliseu Pinto" &&
+  username5 === "Evelyn Rocha"
+) {
   document.write("Parabéns continue sua jornada");
 } else {
   document.write("Tente de novo seu bastardo");
