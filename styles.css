@@ -1,94 +1,69 @@
 body {
-  background-image: url('background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-h1 {
-  color: #ffffff;
-  text-align: center;
-  margin-top: 50px;
-}
-
-/* Estilos Gerais para a Página */
-body {
-    /* Fundo preto total para a estética sombria */
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-color: #000000;
-    /* Fonte com serifa para um toque clássico/medieval de RPG */
     font-family: 'Times New Roman', Times, serif;
-    /* Cor de texto padrão branco/cinza claro para contraste */
     color: #f0f0f0;
-    /* Centraliza o conteúdo principal vertical e horizontalmente */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* Garante que o body ocupe toda a tela */
     min-height: 100vh;
     margin: 0;
-    padding: 20px; /* Adiciona um padding para evitar que o conteúdo toque as bordas */
-    box-sizing: border-box; /* Inclui padding e border dentro da largura/altura total */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-/* Estilo para o Título Principal */
 h1 {
-    /* Cor de texto vermelho escuro para dar um toque sinistro/ameaçador */
     color: #ffffff;
-    /* Letras maiúsculas para ênfase */
     text-transform: uppercase;
-    /* Adiciona uma sombra para um efeito de brilho ou profundidade */
     text-shadow: 0 0 5px #ff0000;
     margin-bottom: 30px;
-    font-size: 2.5em; /* Aumenta o tamanho da fonte */
-    letter-spacing: 2px; /* Espaçamento entre letras */
+    font-size: 2.5em;
+    letter-spacing: 2px;
 }
 
-/* Estilo para a Área da Mensagem (onde o JS exibe o resultado) */
 #mensagem {
-    /* Um "painel" escuro, mas não totalmente preto, para destacar */
     background-color: #1a1a1a;
-    color: #ffffff; /* Texto branco */
+    color: #ffffff;
     padding: 25px 40px;
-    border: 1px solid #333333; /* Borda sutil para definir a área */
+    border: 1px solid #333333;
     border-radius: 5px;
-    /* Sombra interna para dar um efeito de profundidade ou painel em relevo */
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 255, 255, 0.05);
-    max-width: 600px; /* Limita a largura para melhor leitura */
+    max-width: 600px;
     width: 90%;
-    line-height: 1.6; /* Aumenta o espaçamento da linha para leitura */
+    line-height: 1.6;
     font-size: 1.1em;
-    text-align: center; /* Centraliza o texto (conforme o JS já faz) */
-    white-space: pre-line; /* Mantém as quebras de linha do JS (`<br>`) */
+    text-align: center;
+    white-space: pre-line;
 }
 
-/* Estilo para o Link de "Próximo Desafio" dentro da mensagem */
 #mensagem a {
-    color: #00ccff; /* Uma cor de destaque, como azul ciano ou roxo, para o link */
-    text-decoration: none; /* Remove o sublinhado padrão */
-    /* Adiciona um efeito de brilho para o link de ação */
+    color: #00ccff;
+    text-decoration: none;
     text-shadow: 0 0 5px #0099ff;
     transition: color 0.3s;
     font-weight: bold;
-    display: block; /* Garante que o link ocupe sua própria linha */
-    margin-top: 15px; /* Espaço acima do link */
+    display: block;
+    margin-top: 15px;
 }
 
 #mensagem a:hover {
-    color: #4dc3ff; /* Cor mais clara ao passar o mouse */
+    color: #4dc3ff;
     text-shadow: 0 0 10px #00ccff;
 }
 
-/* Container principal da área de "login" ou resposta */
 .login-box {
-    background-color: #0d0d0d; /* Fundo mais escuro que a área de mensagem */
+    background-color: #0d0d0d;
     padding: 40px;
     border-radius: 8px;
     border: 1px solid #333;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), inset 0 0 5px rgba(255, 255, 255, 0.05);
     margin: 20px auto;
-    width: 300px; /* Largura ideal para um "login" */
+    width: 300px;
     text-align: center;
 }
 
@@ -99,36 +74,32 @@ h1 {
     font-size: 0.9em;
 }
 
-/* Estilo dos Campos de Input (onde o usuário digita) */
 .login-box input[type="text"] {
-    width: 100%; /* Ocupa a largura total da caixa */
+    width: 100%;
     padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #444; /* Borda cinza escura */
-    background-color: #1a1a1a; /* Fundo do campo bem escuro */
-    color: #ffffff; /* Texto digitado branco */
+    border: 1px solid #444;
+    background-color: #1a1a1a;
+    color: #ffffff;
     border-radius: 4px;
-    box-sizing: border-box; /* Inclui padding na largura */
+    box-sizing: border-box;
     transition: border-color 0.3s;
     font-family: inherit;
 }
 
-/* Efeito ao focar no campo (quando o usuário clica para digitar) */
 .login-box input[type="text"]:focus {
-    border-color: #990000; /* Borda vermelha escura ao focar */
-    outline: none; /* Remove o contorno padrão do navegador */
-    box-shadow: 0 0 5px #990000; /* Pequeno brilho vermelho */
+    border-color: #990000;
+    outline: none;
+    box-shadow: 0 0 5px #990000;
 }
 
-/* Estilo do Placeholder (o texto "Vítima X" dentro do campo) */
 .login-box input::placeholder {
     color: #777777;
     font-style: italic;
 }
 
-/* Estilo do Botão "Verificar" */
 #submit-button {
-    background-color: #990000; /* Cor vermelha de destaque (igual ao H1) */
+    background-color: #990000;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -143,6 +114,6 @@ h1 {
 }
 
 #submit-button:hover {
-    background-color: #cc0000; /* Vermelho mais forte ao passar o mouse */
-    box-shadow: 0 0 10px #cc0000; /* Brilho vermelho ao passar o mouse */
+    background-color: #cc0000;
+    box-shadow: 0 0 10px #cc0000;
 }

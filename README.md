@@ -1,2 +1,2 @@
-# Mem-rias-Manchadas
+# Memorias-Manchadas
 Site para o RPG da Geovanna 
