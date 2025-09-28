@@ -35,7 +35,7 @@ body {
 /* Estilo para o Título Principal */
 h1 {
     /* Cor de texto vermelho escuro para dar um toque sinistro/ameaçador */
-    color: #990000;
+    color: #ffffff;
     /* Letras maiúsculas para ênfase */
     text-transform: uppercase;
     /* Adiciona uma sombra para um efeito de brilho ou profundidade */
@@ -78,4 +78,71 @@ h1 {
 #mensagem a:hover {
     color: #4dc3ff; /* Cor mais clara ao passar o mouse */
     text-shadow: 0 0 10px #00ccff;
+}
+
+/* Container principal da área de "login" ou resposta */
+.login-box {
+    background-color: #0d0d0d; /* Fundo mais escuro que a área de mensagem */
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), inset 0 0 5px rgba(255, 255, 255, 0.05);
+    margin: 20px auto;
+    width: 300px; /* Largura ideal para um "login" */
+    text-align: center;
+}
+
+.instrucao {
+    color: #cccccc;
+    margin-bottom: 25px;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* Estilo dos Campos de Input (onde o usuário digita) */
+.login-box input[type="text"] {
+    width: 100%; /* Ocupa a largura total da caixa */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #444; /* Borda cinza escura */
+    background-color: #1a1a1a; /* Fundo do campo bem escuro */
+    color: #ffffff; /* Texto digitado branco */
+    border-radius: 4px;
+    box-sizing: border-box; /* Inclui padding na largura */
+    transition: border-color 0.3s;
+    font-family: inherit;
+}
+
+/* Efeito ao focar no campo (quando o usuário clica para digitar) */
+.login-box input[type="text"]:focus {
+    border-color: #990000; /* Borda vermelha escura ao focar */
+    outline: none; /* Remove o contorno padrão do navegador */
+    box-shadow: 0 0 5px #990000; /* Pequeno brilho vermelho */
+}
+
+/* Estilo do Placeholder (o texto "Vítima X" dentro do campo) */
+.login-box input::placeholder {
+    color: #777777;
+    font-style: italic;
+}
+
+/* Estilo do Botão "Verificar" */
+#submit-button {
+    background-color: #990000; /* Cor vermelha de destaque (igual ao H1) */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    width: 100%;
+}
+
+#submit-button:hover {
+    background-color: #cc0000; /* Vermelho mais forte ao passar o mouse */
+    box-shadow: 0 0 10px #cc0000; /* Brilho vermelho ao passar o mouse */
 }
