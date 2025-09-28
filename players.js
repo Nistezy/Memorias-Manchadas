@@ -27,7 +27,7 @@ document.getElementById("puzzle-form").addEventListener('submit', function(event
         mensagem.style.color = '#ffffffff';
         mensagem.style.textAlign = 'center';
     } else {
-        mensagem.textContent = 'Nomes errados trazem confusão. A criatura se fortalece na incerteza. <br> Tente novamente.';
+        mensagem.textContent = 'Nomes errados trazem confusão. A criatura se fortalece na incerteza. Tente novamente.';
         mensagem.style.color = '#ffffffff';
         mensagem.style.textAlign = 'center';
     }
