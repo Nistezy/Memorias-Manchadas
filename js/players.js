@@ -23,7 +23,7 @@ document.getElementById("puzzle-form").addEventListener('submit', function(event
                   respostas.every(nome => corretos.includes(nome));
 
     if (acertou) {
-        mensagem.innerHTML = 'A erradicação não se faz com pressa. <br>Se a criatura nasceu de um ritual dividido em duas etapas, para extingui-la o mesmo esforço é imprescindível. <br>O próximo e último passo começa aqui: <a href="https://example.com/next-challenge" target="_blank">Próximo desafio</a>';
+        mensagem.innerHTML = 'A erradicação não se faz com pressa. <br>Se a criatura nasceu de um ritual dividido em duas etapas, para extingui-la o mesmo esforço é imprescindível. <br>O próximo e último passo começa aqui: <a href="./Próximo desafio/index.html" target="_blank">Próximo desafio</a>';
         mensagem.style.color = '#ffffffff';
         mensagem.style.textAlign = 'center';
     } else {
