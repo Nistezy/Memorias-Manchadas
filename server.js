@@ -12,5 +12,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT,"0.0.0.0", () => {
-  console.log(`Servidor rodando em http://192.168.1.18:${PORT}/`);
+  console.log(`Servidor rodando em http://192.168.1.30:${PORT}/`);
 });
