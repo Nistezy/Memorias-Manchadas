@@ -1,6 +1,6 @@
 body {
     background-image: url('../assets/background2.png');
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -20,81 +20,98 @@ body {
 h1 {
     color: #ffffff;
     text-transform: uppercase;
-    text-shadow: 0 0 10px #4d6e49;
-    margin-bottom: 30px;
+    text-shadow: 0 0 15px rgba(77, 110, 73, 0.8);
+    margin-bottom: 20px;
     font-size: 2.5em;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     text-align: center;
 }
 
 .login-box {
-    background-color: #1a1a1a;
-    padding: 30px;
+    background-color: rgba(26, 26, 26, 0.9); 
+    padding: 40px;
     border-radius: 10px;
-    width: 600px;
-    max-width: 90%;
-    margin: -10px auto 30px auto; /* Subindo o card um pouco */
-    box-shadow: 0 4px 20px rgba(77, 107, 73, 0.4);
+    width: 100%;
+    max-width: 500px; 
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8), 0 0 15px rgba(77, 107, 73, 0.3);
+    border: 1px solid #333;
     text-align: center;
 }
 
 .instrucao {
-    color: #b0b0b0;
-    font-size: 1.1em;
+    color: #8a8a8a;
+    font-size: 1em;
+    font-style: italic;
     margin-bottom: 25px;
-    letter-spacing: 1px;
+    display: block; 
 }
 
 #puzzle-form {
     display: flex;
-    justify-content: flex-start; /* Alinhamento mais controlado */
-    align-items: center;
-    gap: 15px;
+    flex-direction: column; 
+    gap: 20px;
 }
 
 #puzzle-form input {
-    flex-grow: 1;
-    background-color: #0d0d0d;
+    width: 100%; 
+    background-color: #050505;
     color: #ffffff;
     border: 1px solid #4d6e49;
-    border-radius: 5px;
-    padding: 12px;
-    font-size: 1em;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 0.95em;
     font-family: inherit;
     box-sizing: border-box;
+    transition: all 0.4s ease;
 }
 
 #puzzle-form input::placeholder {
-    color: #6d7b6c;
-    opacity: 0.8;
+    color: #4a5449;
+    font-style: italic;
 }
 
 #puzzle-form input:focus {
     outline: none;
     border-color: #9BC40E;
-    box-shadow: 0 0 8px rgba(155, 196, 14, 0.6);
+    box-shadow: 0 0 10px rgba(155, 196, 14, 0.3);
+    background-color: #0a0a0a;
+}
+
+#puzzle-form input[type="date"] {
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 #submit-button {
     background-color: #4d6e49;
     color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    padding: 12px 20px; /* Ajustado para melhor alinhamento vertical */
-    font-size: 1em;
+    border: 1px solid #5d7e59;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 1.1em;
     cursor: pointer;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: background-color 0.3s ease;
-    flex-shrink: 0;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
 }
 
 #submit-button:hover {
-    background-color: #6d7b6c;
+    background-color: #1a2e18;
+    border-color: #9BC40E;
+    color: #9BC40E;
+    box-shadow: 0 0 15px rgba(155, 196, 14, 0.2);
 }
 
 #mensagem {
-    font-size: 1.2em;
-    text-align: center;
-    margin-top: 20px;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-top: 25px;
+    min-height: 1.2em; 
+}
+
+#mensagem a {
+    color: #9BC40E;
+    text-decoration: underline;
+    font-weight: bold;
 }
